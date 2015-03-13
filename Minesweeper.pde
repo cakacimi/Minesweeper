@@ -75,7 +75,7 @@ public void displayLosingMessage()
         (bombs.get(i)).setMarked(false);
     }
 
-    String loser = "You lose!";
+    String loser = "You have lost. Haha!";
     int row = (int)(NUM_ROWS/2)-1;
     int col = (int)((NUM_COLS/2)-(loser.length()/2));
     for(int i = 0; i < loser.length(); i++)
@@ -85,7 +85,7 @@ public void displayLosingMessage()
 }
 public void displayWinningMessage()
 {
-  String winner = "You win!";
+  String winner = "You have won. Goodjob!";
   int row = (int)(NUM_ROWS/2)-1;
   int col = (int)((NUM_COLS/2)-(winner.length()/2));
   for(int i = 0; i < winner.length(); i++)
