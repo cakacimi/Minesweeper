@@ -79,7 +79,7 @@ public void displayLosingMessage()
     int row = (int)(NUM_ROWS/2)-1;
     int col = (int)((NUM_COLS/2)-(loser.length()/2));
     for(int i = 0; i < loser.length(); i++)
-    {
+    { Stroke(Math.Random()*200, 0, 0);
         buttons[row][col+i].setLabel(loser.substring(i,i+1));
     }
 }
