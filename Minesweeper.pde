@@ -75,17 +75,17 @@ public void displayLosingMessage()
         (bombs.get(i)).setMarked(false);
     }
 
-    String loser = "You have lost. Haha!";
+    String loser = "You lose!";
     int row = (int)(NUM_ROWS/2)-1;
     int col = (int)((NUM_COLS/2)-(loser.length()/2));
     for(int i = 0; i < loser.length(); i++)
-    { Stroke(Math.Random()*200, 0, 0);
+    {
         buttons[row][col+i].setLabel(loser.substring(i,i+1));
     }
 }
 public void displayWinningMessage()
 {
-  String winner = "You have won. Goodjob!";
+  String winner = "You win!";
   int row = (int)(NUM_ROWS/2)-1;
   int col = (int)((NUM_COLS/2)-(winner.length()/2));
   for(int i = 0; i < winner.length(); i++)
